@@ -1,0 +1,255 @@
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+.ball{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(4,116,191,1) 60%, rgba(0,212,255,1) 97%);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 13px 1px rgba(9,9,121,0.73);
+    transition: 0.2s;
+    pointer-events: none;
+    position: fixed;
+}
+
+#title {
+    background-color: red;
+    color: white;
+    height: 600px;
+    overflow: hidden;
+    
+}
+
+.cont{
+    padding: 3% 15%;
+}
+
+/*navigation bar*/
+
+a.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav.navbar{
+    padding: 0 0 4.5rem 0;
+}
+
+li.nav-item{
+    padding: 0 18px;
+}
+
+a.navlink{
+    font-size: 2.5rem;
+
+}
+
+.download-button{
+    margin:5% 3% 5% 0;
+    
+}
+
+/*title image*/
+
+.title-image{
+    width:60%;
+    transform:rotate(25deg);
+
+}
+
+#features{
+    padding: 7% 15%;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+
+.feature-box i{
+    color: #ef8172;
+    margin-bottom: 1rem;
+    font-family:fontAwesome;
+}
+
+.feature-box i:hover{
+    color: #ff4cff;
+}
+
+
+/*testimonial Section*/
+
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+
+h2{
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press{
+    background-color:#ef8172; 
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px ;
+}
+
+
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+#cta{
+    background-color: #ff4c68;
+    color: white;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.cta-heading{
+    line-height: 1.5;
+    font-size: 3.5rem;
+}
+
+
+/*footer*/
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+
+#footer i{
+    margin: 20px 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn1{
+    color:#E01E48;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+
+.btn1 span{
+    display: block;
+    padding: 10px 13px;
+    position: relative;
+   
+}
+
+.btn1:before, .btn1:after, .btn1 span:before, .btn1 span:after{
+    content: '';
+    background-color: #E01E48;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out 0s;
+}
+
+.btn1:before, .btn1:after{
+    width: 2px;
+    height: 0;
+}
+
+.btn1 span:before, .btn1 span:after{
+    width: 0;
+    height: 2px;
+    transition: 1s;
+}
+
+.btn1:after{
+    top:auto;
+    left: auto;
+    right:0;
+    bottom: 0;
+}
+
+.btn1:hover:after, .btn1:hover:before{
+    height:100%;
+    transition-delay: 0.3s;
+
+}
+
+.btn1 span:before{
+    right: 0;
+    left: auto;
+}
+.btn1 span:after{
+    top:auto;
+    bottom: 0;
+}
+
+.btn1:hover span:after, .btn1:hover span:before{
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media (max-width: 1028px) {
+    .title-image{
+        position: static;
+        transform: rotate(0deg);
+    }
+    #title {
+        height: auto;
+       
+    }
+}
